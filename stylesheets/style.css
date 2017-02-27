@@ -1,0 +1,19 @@
+/* line 1, ../sass/_app.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 5, ../sass/_app.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 9, ../sass/_app.scss */
+body {
+  background-image: url(https://cdn.liquidsky.tv/assets/newsky_background.png);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
