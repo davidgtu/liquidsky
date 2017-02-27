@@ -1,14 +1,93 @@
-/* line 1, ../sass/_app.scss */
+/*=== Trigger  ===*/
+/* line 2, ../sass/_animations.scss */
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/*=== FADE IN DOWN ===*/
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+/* line 37, ../sass/_animations.scss */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+/*==== FADE IN UP ===*/
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+/* line 82, ../sass/_animations.scss */
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+/* parallax */
+/* line 3, ../sass/_app.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 5, ../sass/_app.scss */
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-/* line 9, ../sass/_app.scss */
+/* line 7, ../sass/_app.scss */
 body {
   background-image: url(https://cdn.liquidsky.tv/assets/newsky_background.png);
   min-height: 100vh;
@@ -17,3 +96,108 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* line 16, ../sass/_app.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 20, ../sass/_app.scss */
+.header {
+  width: 100%;
+  padding: 30px 0;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.62) 44%, transparent 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.9)), color-stop(44%, rgba(0, 0, 0, 0.62)), color-stop(100%, transparent));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.62) 44%, transparent 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.62) 44%, transparent 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.62) 44%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.62) 44%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#00000000',GradientType=0 );
+}
+/* line 32, ../sass/_app.scss */
+.header .logo {
+  text-align: center;
+}
+
+/* line 40, ../sass/_app.scss */
+section .hero {
+  width: 100%;
+  height: 100vh;
+}
+/* line 44, ../sass/_app.scss */
+section .hero .container {
+  margin-top: -200px;
+}
+/* line 48, ../sass/_app.scss */
+section .hero .container h1 {
+  letter-spacing: .2em;
+  display: inline;
+  margin: 0 auto;
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 15px;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1.5s;
+  transform: translateZ(0.3px) scale(0.7);
+  z-index: 300;
+}
+/* line 61, ../sass/_app.scss */
+section .hero .container h2 {
+  padding-top: 15px;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1.5s;
+  transform: translateZ(0.1px) scale(0.9);
+  z-index: 100;
+}
+
+@font-face {
+  font-family: 'Futura MD';
+  src: url("../font/Futura-md-bt.ttf") format("truetype");
+}
+/* line 6, ../sass/_typography.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* line 10, ../sass/_typography.scss */
+.text-white {
+  color: white;
+}
+
+/* line 14, ../sass/_typography.scss */
+.font-futura {
+  font-family: "Futura MD";
+}
+
+/* line 18, ../sass/_typography.scss */
+.font-xl {
+  font-size: 48px;
+}
+
+/* line 22, ../sass/_typography.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 1, ../sass/_constants.scss */
+.full-height {
+  height: 100%;
+}
+
+/* line 6, ../sass/_constants.scss */
+.flexbox {
+  display: flex;
+}
+/* line 9, ../sass/_constants.scss */
+.flexbox.flex-row {
+  flex-direction: row;
+}
+/* line 13, ../sass/_constants.scss */
+.flexbox.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
