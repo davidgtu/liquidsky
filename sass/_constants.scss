@@ -19,3 +19,32 @@
     align-items: center;
   }
 }
+
+.bg-grey {
+  background: #dbe0e3;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.bg-black {
+  background: rgba(0,0,0,0.6);
+}
+
+.top-gutter {
+  margin-top: 25px;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+.no-padding {
+  padding: 0!important;
+}

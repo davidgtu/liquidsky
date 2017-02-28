@@ -1,4 +1,4 @@
-/*=== Trigger  ===*/
+/* Trigger */
 /* line 2, ../sass/_animations.scss */
 .animate {
   -webkit-animation-duration: 1s;
@@ -7,7 +7,7 @@
   animation-fill-mode: both;
 }
 
-/*=== FADE IN DOWN ===*/
+/* FADE IN DOWN */
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
@@ -38,7 +38,7 @@
   animation-name: fadeInDown;
 }
 
-/*==== FADE IN UP ===*/
+/* FADE IN UP */
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
@@ -81,13 +81,69 @@
   animation-name: fadeInUp;
 }
 
-/* parallax */
+/* Bounce Down */
+@-webkit-keyframes bounceDown {
+  0% {
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+@keyframes bounceDown {
+  0% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+/* line 129, ../sass/_animations.scss */
+.bounceDown {
+  -webkit-animation-name: bounceDown;
+  animation-name: bounceDown;
+  -webkit-animation: bounceDown 1.5s infinite;
+  -moz-animation: bounceDown 1.5s infinite;
+  -o-animation: bounceDown 1.5s infinite;
+  animation: bounceDown 1.5s infinite;
+}
+
+/* Parallax */
+/* okay it's not really an animation but still */
 /* line 4, ../sass/_app.scss */
 html {
   box-sizing: border-box;
 }
 
 /* line 9, ../sass/_app.scss */
+a {
+  color: #fff !important;
+}
+
+/* line 13, ../sass/_app.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 17, ../sass/_app.scss */
 body {
   background-image: url(https://cdn.liquidsky.tv/assets/newsky_background.png);
   background-attachment: fixed;
@@ -96,37 +152,37 @@ body {
   background-size: cover;
 }
 
-/* line 18, ../sass/_app.scss */
+/* line 26, ../sass/_app.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 22, ../sass/_app.scss */
+/* line 30, ../sass/_app.scss */
 .header {
   width: 100%;
   padding: 30px 0;
 }
-/* line 26, ../sass/_app.scss */
+/* line 34, ../sass/_app.scss */
 .header .logo {
   text-align: center;
 }
 
-/* line 34, ../sass/_app.scss */
+/* line 42, ../sass/_app.scss */
 .hero {
   width: 100%;
   height: 100vh;
 }
-/* line 38, ../sass/_app.scss */
+/* line 46, ../sass/_app.scss */
 .hero .container {
   width: 100%;
 }
 @media only screen and (min-width: 992px) {
-  /* line 38, ../sass/_app.scss */
+  /* line 46, ../sass/_app.scss */
   .hero .container {
     margin-top: -200px;
   }
 }
-/* line 46, ../sass/_app.scss */
+/* line 54, ../sass/_app.scss */
 .hero .container h1 {
   font-size: 20px;
   letter-spacing: .2em;
@@ -142,12 +198,12 @@ body {
   z-index: 300;
 }
 @media only screen and (min-width: 992px) {
-  /* line 46, ../sass/_app.scss */
+  /* line 54, ../sass/_app.scss */
   .hero .container h1 {
     font-size: 48px;
   }
 }
-/* line 65, ../sass/_app.scss */
+/* line 73, ../sass/_app.scss */
 .hero .container h2 {
   font-size: 18px;
   padding-top: 15px;
@@ -158,45 +214,46 @@ body {
   z-index: 100;
 }
 @media only screen and (min-width: 992px) {
-  /* line 65, ../sass/_app.scss */
+  /* line 73, ../sass/_app.scss */
   .hero .container h2 {
     font-size: 30px;
   }
 }
-/* line 79, ../sass/_app.scss */
+/* line 87, ../sass/_app.scss */
 .hero .container .feature-container {
   margin-top: 50px;
   animation-delay: 1.5s;
 }
-/* line 83, ../sass/_app.scss */
+/* line 91, ../sass/_app.scss */
 .hero .container .feature-container .feature {
   display: inline-block;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 83, ../sass/_app.scss */
+  /* line 91, ../sass/_app.scss */
   .hero .container .feature-container .feature {
     width: 200px;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 83, ../sass/_app.scss */
+  /* line 91, ../sass/_app.scss */
   .hero .container .feature-container .feature {
     width: 200px;
   }
 }
-/* line 97, ../sass/_app.scss */
+/* line 105, ../sass/_app.scss */
 .hero .container .download-button {
   animation-delay: 1.5s;
 }
-/* line 101, ../sass/_app.scss */
+/* line 109, ../sass/_app.scss */
 .hero .container .download-button .btn {
   color: #fff;
 }
-/* line 105, ../sass/_app.scss */
-.hero .container .download-button a {
-  color: #fff;
+/* line 113, ../sass/_app.scss */
+.hero .container .download-button .btn-apps {
+  background-color: #E8490C;
+  margin: 0 6px;
 }
-/* line 109, ../sass/_app.scss */
+/* line 118, ../sass/_app.scss */
 .hero .container .download-button button {
   padding: 15px;
   margin-top: 30px;
@@ -204,9 +261,126 @@ body {
   transition: 0.3s background-color linear;
   background-color: #E8490C;
 }
-/* line 117, ../sass/_app.scss */
+/* line 126, ../sass/_app.scss */
 .hero .container .download-button button:hover {
   background-color: #FF0000;
+}
+/* line 132, ../sass/_app.scss */
+.hero .container .scroll {
+  position: absolute;
+  top: 95%;
+}
+
+/* line 142, ../sass/_app.scss */
+.info {
+  padding: 40px 0;
+  margin-top: -100px;
+}
+@media only screen and (min-width: 992px) {
+  /* line 142, ../sass/_app.scss */
+  .info {
+    padding: 100px 0;
+  }
+}
+/* line 154, ../sass/_app.scss */
+.info .container .col-md-6 .info-content {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 15px;
+  display: inline;
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  /* line 154, ../sass/_app.scss */
+  .info .container .col-md-6 .info-content {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 168, ../sass/_app.scss */
+  .info .container .container {
+    margin-top: -100px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 168, ../sass/_app.scss */
+  .info .container .container {
+    margin-top: -100px;
+  }
+}
+/* line 178, ../sass/_app.scss */
+.info .container .container .col-md-6 {
+  text-align: center;
+}
+/* line 181, ../sass/_app.scss */
+.info .container .container .col-md-6 p {
+  margin: 30px 0;
+  padding-bottom: 15px;
+}
+@media only screen and (max-width: 767px) {
+  /* line 186, ../sass/_app.scss */
+  .info .container .container .col-md-6 p:first-child {
+    border-bottom: 2px solid #fff;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 192, ../sass/_app.scss */
+  .info .container .container .col-md-6 p:first-child {
+    border-bottom: 2px solid #fff;
+    display: inline;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* line 181, ../sass/_app.scss */
+  .info .container .container .col-md-6 p {
+    margin: 15px 30px 0 0;
+    border-bottom: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* line 178, ../sass/_app.scss */
+  .info .container .container .col-md-6 {
+    text-align: left;
+    padding-left: 0;
+  }
+}
+
+/* line 213, ../sass/_app.scss */
+.svg-container {
+  width: 83%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 213, ../sass/_app.scss */
+  .svg-container {
+    width: 59%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* line 213, ../sass/_app.scss */
+  .svg-container {
+    width: 63%;
+    margin-top: -35px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 226, ../sass/_app.scss */
+  .svg-container svg {
+    width: 350px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 226, ../sass/_app.scss */
+  .svg-container svg {
+    margin-top: 26px;
+    height: 310px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* line 226, ../sass/_app.scss */
+  .svg-container svg {
+    margin-top: 26px;
+    height: 310px;
+  }
 }
 
 /* line 1, ../sass/_constants.scss */
@@ -232,6 +406,40 @@ body {
   align-items: center;
 }
 
+/* line 23, ../sass/_constants.scss */
+.bg-grey {
+  background: #dbe0e3;
+}
+
+/* line 27, ../sass/_constants.scss */
+.bg-white {
+  background: #fff;
+}
+
+/* line 31, ../sass/_constants.scss */
+.bg-black {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* line 35, ../sass/_constants.scss */
+.top-gutter {
+  margin-top: 25px;
+}
+
+/* line 39, ../sass/_constants.scss */
+.disabled {
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 48, ../sass/_constants.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
 @font-face {
   font-family: 'Futura MD';
   src: url("../font/Futura-md-bt.ttf") format("truetype");
@@ -252,13 +460,38 @@ body {
 }
 
 /* line 18, ../sass/_typography.scss */
-.font-xl {
-  font-size: 48px;
+.text-center {
+  text-align: center;
 }
 
 /* line 22, ../sass/_typography.scss */
-.text-center {
-  text-align: center;
+.font-bold {
+  font-weight: 700;
+}
+
+/* line 26, ../sass/_typography.scss */
+.font-sm {
+  font-size: 13px;
+}
+
+/* line 30, ../sass/_typography.scss */
+.font-sm-md {
+  font-size: 20px;
+}
+
+/* line 34, ../sass/_typography.scss */
+.font-md {
+  font-size: 24px;
+}
+
+/* line 38, ../sass/_typography.scss */
+.font-lg {
+  font-size: 36px;
+}
+
+/* line 42, ../sass/_typography.scss */
+.font-xl {
+  font-size: 48px;
 }
 
 /*# sourceMappingURL=style.css.map */
