@@ -85,7 +85,6 @@
 /* line 4, ../sass/_app.scss */
 html {
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 /* line 9, ../sass/_app.scss */
@@ -119,9 +118,15 @@ body {
 }
 /* line 38, ../sass/_app.scss */
 .hero .container {
-  margin-top: -200px;
+  width: 100%;
 }
-/* line 42, ../sass/_app.scss */
+@media only screen and (min-width: 992px) {
+  /* line 38, ../sass/_app.scss */
+  .hero .container {
+    margin-top: -200px;
+  }
+}
+/* line 46, ../sass/_app.scss */
 .hero .container h1 {
   font-size: 20px;
   letter-spacing: .2em;
@@ -137,12 +142,12 @@ body {
   z-index: 300;
 }
 @media only screen and (min-width: 992px) {
-  /* line 42, ../sass/_app.scss */
+  /* line 46, ../sass/_app.scss */
   .hero .container h1 {
     font-size: 48px;
   }
 }
-/* line 61, ../sass/_app.scss */
+/* line 65, ../sass/_app.scss */
 .hero .container h2 {
   font-size: 18px;
   padding-top: 15px;
@@ -153,43 +158,53 @@ body {
   z-index: 100;
 }
 @media only screen and (min-width: 992px) {
-  /* line 61, ../sass/_app.scss */
+  /* line 65, ../sass/_app.scss */
   .hero .container h2 {
     font-size: 30px;
   }
 }
-/* line 75, ../sass/_app.scss */
+/* line 79, ../sass/_app.scss */
 .hero .container .feature-container {
   margin-top: 50px;
   animation-delay: 1.5s;
 }
-/* line 79, ../sass/_app.scss */
+/* line 83, ../sass/_app.scss */
 .hero .container .feature-container .feature {
   display: inline-block;
-  width: 200px;
 }
-/* line 85, ../sass/_app.scss */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 83, ../sass/_app.scss */
+  .hero .container .feature-container .feature {
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* line 83, ../sass/_app.scss */
+  .hero .container .feature-container .feature {
+    width: 200px;
+  }
+}
+/* line 97, ../sass/_app.scss */
 .hero .container .download-button {
   animation-delay: 1.5s;
 }
-/* line 89, ../sass/_app.scss */
+/* line 101, ../sass/_app.scss */
 .hero .container .download-button .btn {
   color: #fff;
 }
-/* line 93, ../sass/_app.scss */
+/* line 105, ../sass/_app.scss */
 .hero .container .download-button a {
   color: #fff;
 }
-/* line 97, ../sass/_app.scss */
+/* line 109, ../sass/_app.scss */
 .hero .container .download-button button {
   padding: 15px;
   margin-top: 30px;
-  margin-left: 30px;
   width: 250px;
   transition: 0.3s background-color linear;
   background-color: #E8490C;
 }
-/* line 105, ../sass/_app.scss */
+/* line 117, ../sass/_app.scss */
 .hero .container .download-button button:hover {
   background-color: #FF0000;
 }
@@ -208,6 +223,10 @@ body {
   flex-direction: row;
 }
 /* line 13, ../sass/_constants.scss */
+.flex.flex-column {
+  flex-direction: column;
+}
+/* line 17, ../sass/_constants.scss */
 .flex.flex-center {
   justify-content: center;
   align-items: center;

@@ -3,7 +3,7 @@
 
 html {
   box-sizing: border-box;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 body {
@@ -37,7 +37,11 @@ body {
 
   .container {
 
-    margin-top: -200px;
+    width: 100%;
+
+    @include media(desktop){
+      margin-top: -200px;
+    }
 
     h1 {
       font-size: 20px;
@@ -78,7 +82,15 @@ body {
 
       .feature {
         display: inline-block;
-        width: 200px;
+        // width: 155px;
+
+        @include media(tablet) {
+          width: 200px;
+        }
+
+        @include media(desktop) {
+          width: 200px;
+        }
       }
     }
 
@@ -97,7 +109,7 @@ body {
       button {
         padding: 15px;
         margin-top: 30px;
-        margin-left: 30px;
+        // margin-left: 30px;
         width: 250px;
         transition: 0.3s background-color linear;
         background-color:#E8490C;
