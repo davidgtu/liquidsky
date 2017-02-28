@@ -157,32 +157,32 @@ body {
   box-sizing: inherit;
 }
 
-/* line 30, ../sass/_app.scss */
+/* line 31, ../sass/_app.scss */
 .header {
   width: 100%;
   padding: 30px 0;
 }
-/* line 34, ../sass/_app.scss */
+/* line 35, ../sass/_app.scss */
 .header .logo {
   text-align: center;
 }
 
-/* line 42, ../sass/_app.scss */
+/* line 43, ../sass/_app.scss */
 .hero {
   width: 100%;
   height: 100vh;
 }
-/* line 46, ../sass/_app.scss */
+/* line 47, ../sass/_app.scss */
 .hero .container {
   width: 100%;
 }
 @media only screen and (min-width: 992px) {
-  /* line 46, ../sass/_app.scss */
+  /* line 47, ../sass/_app.scss */
   .hero .container {
     margin-top: -200px;
   }
 }
-/* line 54, ../sass/_app.scss */
+/* line 55, ../sass/_app.scss */
 .hero .container h1 {
   font-size: 20px;
   letter-spacing: .2em;
@@ -198,12 +198,12 @@ body {
   z-index: 300;
 }
 @media only screen and (min-width: 992px) {
-  /* line 54, ../sass/_app.scss */
+  /* line 55, ../sass/_app.scss */
   .hero .container h1 {
     font-size: 48px;
   }
 }
-/* line 73, ../sass/_app.scss */
+/* line 74, ../sass/_app.scss */
 .hero .container h2 {
   font-size: 18px;
   padding-top: 15px;
@@ -214,56 +214,56 @@ body {
   z-index: 100;
 }
 @media only screen and (min-width: 992px) {
-  /* line 73, ../sass/_app.scss */
+  /* line 74, ../sass/_app.scss */
   .hero .container h2 {
     font-size: 30px;
   }
 }
-/* line 87, ../sass/_app.scss */
+/* line 88, ../sass/_app.scss */
 .hero .container .feature-container {
   margin-top: 50px;
   animation-delay: 1.5s;
 }
-/* line 91, ../sass/_app.scss */
+/* line 92, ../sass/_app.scss */
 .hero .container .feature-container .feature {
   display: inline-block;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 91, ../sass/_app.scss */
+  /* line 92, ../sass/_app.scss */
   .hero .container .feature-container .feature {
     width: 200px;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 91, ../sass/_app.scss */
+  /* line 92, ../sass/_app.scss */
   .hero .container .feature-container .feature {
     width: 200px;
   }
 }
-/* line 103, ../sass/_app.scss */
+/* line 104, ../sass/_app.scss */
 .hero .container .feature-container .feature p {
   font-size: 13px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 107, ../sass/_app.scss */
+  /* line 108, ../sass/_app.scss */
   .hero .container .feature-container .feature svg {
     width: 30px;
   }
 }
-/* line 115, ../sass/_app.scss */
+/* line 116, ../sass/_app.scss */
 .hero .container .download-button {
   animation-delay: 1.5s;
 }
-/* line 119, ../sass/_app.scss */
+/* line 120, ../sass/_app.scss */
 .hero .container .download-button .btn {
   color: #fff;
 }
-/* line 123, ../sass/_app.scss */
+/* line 124, ../sass/_app.scss */
 .hero .container .download-button .btn-apps {
   background-color: #E8490C;
   margin: 0 6px;
 }
-/* line 128, ../sass/_app.scss */
+/* line 129, ../sass/_app.scss */
 .hero .container .download-button button {
   padding: 15px;
   margin-top: 30px;
@@ -271,28 +271,27 @@ body {
   transition: 0.3s background-color linear;
   background-color: #E8490C;
 }
-/* line 136, ../sass/_app.scss */
+/* line 137, ../sass/_app.scss */
 .hero .container .download-button button:hover {
   background-color: #FF0000;
 }
-/* line 142, ../sass/_app.scss */
+/* line 143, ../sass/_app.scss */
 .hero .container .scroll {
   position: absolute;
   top: 95%;
 }
 
-/* line 152, ../sass/_app.scss */
+/* line 153, ../sass/_app.scss */
 .info {
   padding: 40px 0;
-  margin-top: -100px;
 }
 @media only screen and (min-width: 992px) {
-  /* line 152, ../sass/_app.scss */
+  /* line 153, ../sass/_app.scss */
   .info {
     padding: 100px 0;
   }
 }
-/* line 164, ../sass/_app.scss */
+/* line 165, ../sass/_app.scss */
 .info .container .col-md-6 .info-content {
   border-bottom: 2px solid #fff;
   padding-bottom: 15px;
@@ -300,81 +299,81 @@ body {
   text-align: center;
 }
 @media only screen and (min-width: 992px) {
-  /* line 164, ../sass/_app.scss */
+  /* line 165, ../sass/_app.scss */
   .info .container .col-md-6 .info-content {
     text-align: left;
   }
 }
-/* line 188, ../sass/_app.scss */
+/* line 189, ../sass/_app.scss */
 .info .container .container .col-md-6 {
   text-align: center;
 }
-/* line 191, ../sass/_app.scss */
+/* line 192, ../sass/_app.scss */
 .info .container .container .col-md-6 p {
   margin: 30px 0;
   padding-bottom: 15px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 196, ../sass/_app.scss */
+  /* line 197, ../sass/_app.scss */
   .info .container .container .col-md-6 p:first-child {
     border-bottom: 2px solid #fff;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 202, ../sass/_app.scss */
+  /* line 203, ../sass/_app.scss */
   .info .container .container .col-md-6 p:first-child {
     border-bottom: 2px solid #fff;
     display: inline;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 191, ../sass/_app.scss */
+  /* line 192, ../sass/_app.scss */
   .info .container .container .col-md-6 p {
     margin: 15px 30px 0 0;
     border-bottom: none;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 188, ../sass/_app.scss */
+  /* line 189, ../sass/_app.scss */
   .info .container .container .col-md-6 {
     text-align: left;
     padding-left: 0;
   }
 }
 
-/* line 223, ../sass/_app.scss */
+/* line 224, ../sass/_app.scss */
 .svg-container {
   width: 83%;
   margin: 0 auto;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 223, ../sass/_app.scss */
+  /* line 224, ../sass/_app.scss */
   .svg-container {
     width: 59%;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 223, ../sass/_app.scss */
+  /* line 224, ../sass/_app.scss */
   .svg-container {
     width: 63%;
     margin-top: -35px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 236, ../sass/_app.scss */
+  /* line 237, ../sass/_app.scss */
   .svg-container svg {
     width: 350px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 236, ../sass/_app.scss */
+  /* line 237, ../sass/_app.scss */
   .svg-container svg {
     margin-top: 26px;
     height: 310px;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 236, ../sass/_app.scss */
+  /* line 237, ../sass/_app.scss */
   .svg-container svg {
     margin-top: 26px;
     height: 310px;

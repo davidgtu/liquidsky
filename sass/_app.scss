@@ -27,6 +27,7 @@ body {
   box-sizing: inherit;
 }
 
+
 .header {
   width:100%;
   padding: 30px 0;
@@ -151,7 +152,7 @@ body {
 
 .info {
   padding: 40px 0;
-  margin-top: -100px;
+  // margin-top: -100px;
 
   @include media(desktop) {
     padding: 100px 0;
