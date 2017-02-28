@@ -99,6 +99,16 @@ body {
         @include media(desktop) {
           width: 200px;
         }
+
+        p {
+          font-size: 13px;
+        }
+
+        svg {
+          @include media(mobile) {
+            width: 30px;
+          }
+        }
       }
     }
 

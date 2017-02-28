@@ -240,20 +240,30 @@ body {
     width: 200px;
   }
 }
-/* line 105, ../sass/_app.scss */
+/* line 103, ../sass/_app.scss */
+.hero .container .feature-container .feature p {
+  font-size: 13px;
+}
+@media only screen and (max-width: 767px) {
+  /* line 107, ../sass/_app.scss */
+  .hero .container .feature-container .feature svg {
+    width: 30px;
+  }
+}
+/* line 115, ../sass/_app.scss */
 .hero .container .download-button {
   animation-delay: 1.5s;
 }
-/* line 109, ../sass/_app.scss */
+/* line 119, ../sass/_app.scss */
 .hero .container .download-button .btn {
   color: #fff;
 }
-/* line 113, ../sass/_app.scss */
+/* line 123, ../sass/_app.scss */
 .hero .container .download-button .btn-apps {
   background-color: #E8490C;
   margin: 0 6px;
 }
-/* line 118, ../sass/_app.scss */
+/* line 128, ../sass/_app.scss */
 .hero .container .download-button button {
   padding: 15px;
   margin-top: 30px;
@@ -261,28 +271,28 @@ body {
   transition: 0.3s background-color linear;
   background-color: #E8490C;
 }
-/* line 126, ../sass/_app.scss */
+/* line 136, ../sass/_app.scss */
 .hero .container .download-button button:hover {
   background-color: #FF0000;
 }
-/* line 132, ../sass/_app.scss */
+/* line 142, ../sass/_app.scss */
 .hero .container .scroll {
   position: absolute;
   top: 95%;
 }
 
-/* line 142, ../sass/_app.scss */
+/* line 152, ../sass/_app.scss */
 .info {
   padding: 40px 0;
   margin-top: -100px;
 }
 @media only screen and (min-width: 992px) {
-  /* line 142, ../sass/_app.scss */
+  /* line 152, ../sass/_app.scss */
   .info {
     padding: 100px 0;
   }
 }
-/* line 154, ../sass/_app.scss */
+/* line 164, ../sass/_app.scss */
 .info .container .col-md-6 .info-content {
   border-bottom: 2px solid #fff;
   padding-bottom: 15px;
@@ -290,81 +300,81 @@ body {
   text-align: center;
 }
 @media only screen and (min-width: 992px) {
-  /* line 154, ../sass/_app.scss */
+  /* line 164, ../sass/_app.scss */
   .info .container .col-md-6 .info-content {
     text-align: left;
   }
 }
-/* line 178, ../sass/_app.scss */
+/* line 188, ../sass/_app.scss */
 .info .container .container .col-md-6 {
   text-align: center;
 }
-/* line 181, ../sass/_app.scss */
+/* line 191, ../sass/_app.scss */
 .info .container .container .col-md-6 p {
   margin: 30px 0;
   padding-bottom: 15px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 186, ../sass/_app.scss */
+  /* line 196, ../sass/_app.scss */
   .info .container .container .col-md-6 p:first-child {
     border-bottom: 2px solid #fff;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 192, ../sass/_app.scss */
+  /* line 202, ../sass/_app.scss */
   .info .container .container .col-md-6 p:first-child {
     border-bottom: 2px solid #fff;
     display: inline;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 181, ../sass/_app.scss */
+  /* line 191, ../sass/_app.scss */
   .info .container .container .col-md-6 p {
     margin: 15px 30px 0 0;
     border-bottom: none;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 178, ../sass/_app.scss */
+  /* line 188, ../sass/_app.scss */
   .info .container .container .col-md-6 {
     text-align: left;
     padding-left: 0;
   }
 }
 
-/* line 213, ../sass/_app.scss */
+/* line 223, ../sass/_app.scss */
 .svg-container {
   width: 83%;
   margin: 0 auto;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 213, ../sass/_app.scss */
+  /* line 223, ../sass/_app.scss */
   .svg-container {
     width: 59%;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 213, ../sass/_app.scss */
+  /* line 223, ../sass/_app.scss */
   .svg-container {
     width: 63%;
     margin-top: -35px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 226, ../sass/_app.scss */
+  /* line 236, ../sass/_app.scss */
   .svg-container svg {
     width: 350px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 226, ../sass/_app.scss */
+  /* line 236, ../sass/_app.scss */
   .svg-container svg {
     margin-top: 26px;
     height: 310px;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 226, ../sass/_app.scss */
+  /* line 236, ../sass/_app.scss */
   .svg-container svg {
     margin-top: 26px;
     height: 310px;
