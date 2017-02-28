@@ -168,11 +168,11 @@ body {
     .container {
 
       @include media(mobile) {
-        margin-top: -100px;
+        // margin-top: -100px;
       }
 
       @include media(tablet) {
-        margin-top: -100px;
+        // margin-top: -100px;
       }
 
       .col-md-6 {

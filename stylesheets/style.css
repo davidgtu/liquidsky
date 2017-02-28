@@ -295,18 +295,6 @@ body {
     text-align: left;
   }
 }
-@media only screen and (max-width: 767px) {
-  /* line 168, ../sass/_app.scss */
-  .info .container .container {
-    margin-top: -100px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 168, ../sass/_app.scss */
-  .info .container .container {
-    margin-top: -100px;
-  }
-}
 /* line 178, ../sass/_app.scss */
 .info .container .container .col-md-6 {
   text-align: center;
