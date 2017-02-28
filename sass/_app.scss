@@ -1,4 +1,5 @@
 @import "animations";
+@import "mixins";
 
 html {
   box-sizing: border-box;
@@ -6,11 +7,11 @@ html {
 
 body {
   background-image:url(https://cdn.liquidsky.tv/assets/newsky_background.png);
-  min-height: 100vh;
+  // min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  // background-size: cover;
 }
 
 *, *:before, *:after {
@@ -38,6 +39,7 @@ body {
     margin-top: -200px;
 
     h1 {
+      font-size: 20px;
       letter-spacing: .2em;
       display: inline;
       margin: 0 auto;
@@ -47,22 +49,61 @@ body {
       -webkit-animation-delay: 1s;
       -moz-animation-delay: 1s;
       animation-delay: 1.5s;
+
+      @include media(desktop) {
+        font-size: 48px;
+      }
+
       @include parallax(.3);
     }
 
     h2 {
+      font-size: 18px;
       padding-top:15px;
       -webkit-animation-delay: 1s;
       -moz-animation-delay: 1s;
       animation-delay: 1.5s;
+
+      @include media(desktop) {
+        font-size: 30px;
+      }
+
       @include parallax(.1);
     }
 
     .feature-container {
-      margin-top: 25px;
+      margin-top: 50px;
+      animation-delay: 1.5s;
 
       .feature {
         display: inline-block;
+        width: 200px;
+      }
+    }
+
+    .download-button {
+
+      animation-delay: 1.5s;
+
+      .btn {
+        color: #fff;
+      }
+
+      a {
+        color: #fff;
+      }
+
+      button {
+        padding: 15px;
+        margin-top: 30px;
+        margin-left: 30px;
+        width: 250px;
+        transition: 0.3s background-color linear;
+        background-color:#E8490C;
+
+        &:hover {
+          background-color:#FF0000;
+        }
       }
     }
 
