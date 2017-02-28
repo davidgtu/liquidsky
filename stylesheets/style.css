@@ -278,7 +278,7 @@ body {
 /* line 143, ../sass/_app.scss */
 .hero .container .scroll {
   position: absolute;
-  top: 95%;
+  top: 95vh;
 }
 
 /* line 153, ../sass/_app.scss */
