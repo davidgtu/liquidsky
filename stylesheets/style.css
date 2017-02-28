@@ -260,13 +260,13 @@ body {
 }
 /* line 124, ../sass/_app.scss */
 .hero .container .download-button .btn-apps {
-  background-color: #E8490C;
-  margin: 0 6px;
+  background-color: #ECF0F1;
+  margin: 30px 6px;
+  color: #000 !important;
 }
-/* line 129, ../sass/_app.scss */
+/* line 130, ../sass/_app.scss */
 .hero .container .download-button button {
   padding: 15px;
-  margin-top: 30px;
   width: 250px;
   transition: 0.3s background-color linear;
   background-color: #E8490C;
