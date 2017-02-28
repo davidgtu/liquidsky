@@ -85,9 +85,10 @@
 /* line 4, ../sass/_app.scss */
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-/* line 8, ../sass/_app.scss */
+/* line 9, ../sass/_app.scss */
 body {
   background-image: url(https://cdn.liquidsky.tv/assets/newsky_background.png);
   background-attachment: fixed;
@@ -96,31 +97,31 @@ body {
   background-size: cover;
 }
 
-/* line 17, ../sass/_app.scss */
+/* line 18, ../sass/_app.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 21, ../sass/_app.scss */
+/* line 22, ../sass/_app.scss */
 .header {
   width: 100%;
   padding: 30px 0;
 }
-/* line 25, ../sass/_app.scss */
+/* line 26, ../sass/_app.scss */
 .header .logo {
   text-align: center;
 }
 
-/* line 33, ../sass/_app.scss */
+/* line 34, ../sass/_app.scss */
 .hero {
   width: 100%;
   height: 100vh;
 }
-/* line 37, ../sass/_app.scss */
+/* line 38, ../sass/_app.scss */
 .hero .container {
   margin-top: -200px;
 }
-/* line 41, ../sass/_app.scss */
+/* line 42, ../sass/_app.scss */
 .hero .container h1 {
   font-size: 20px;
   letter-spacing: .2em;
@@ -136,12 +137,12 @@ body {
   z-index: 300;
 }
 @media only screen and (min-width: 992px) {
-  /* line 41, ../sass/_app.scss */
+  /* line 42, ../sass/_app.scss */
   .hero .container h1 {
     font-size: 48px;
   }
 }
-/* line 60, ../sass/_app.scss */
+/* line 61, ../sass/_app.scss */
 .hero .container h2 {
   font-size: 18px;
   padding-top: 15px;
@@ -152,34 +153,34 @@ body {
   z-index: 100;
 }
 @media only screen and (min-width: 992px) {
-  /* line 60, ../sass/_app.scss */
+  /* line 61, ../sass/_app.scss */
   .hero .container h2 {
     font-size: 30px;
   }
 }
-/* line 74, ../sass/_app.scss */
+/* line 75, ../sass/_app.scss */
 .hero .container .feature-container {
   margin-top: 50px;
   animation-delay: 1.5s;
 }
-/* line 78, ../sass/_app.scss */
+/* line 79, ../sass/_app.scss */
 .hero .container .feature-container .feature {
   display: inline-block;
   width: 200px;
 }
-/* line 84, ../sass/_app.scss */
+/* line 85, ../sass/_app.scss */
 .hero .container .download-button {
   animation-delay: 1.5s;
 }
-/* line 88, ../sass/_app.scss */
+/* line 89, ../sass/_app.scss */
 .hero .container .download-button .btn {
   color: #fff;
 }
-/* line 92, ../sass/_app.scss */
+/* line 93, ../sass/_app.scss */
 .hero .container .download-button a {
   color: #fff;
 }
-/* line 96, ../sass/_app.scss */
+/* line 97, ../sass/_app.scss */
 .hero .container .download-button button {
   padding: 15px;
   margin-top: 30px;
@@ -188,7 +189,7 @@ body {
   transition: 0.3s background-color linear;
   background-color: #E8490C;
 }
-/* line 104, ../sass/_app.scss */
+/* line 105, ../sass/_app.scss */
 .hero .container .download-button button:hover {
   background-color: #FF0000;
 }
