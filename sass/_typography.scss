@@ -11,8 +11,16 @@
   color: #fff;
 }
 
+.text-teal {
+  color:#B0BEC5;
+}
+
 .font-futura {
   font-family: "Futura MD";
+}
+
+.font-pt {
+  font-family: "PT Serif", serif;
 }
 
 .text-center {
@@ -21,6 +29,10 @@
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-italic {
+  font-style: italic;
 }
 
 .font-sm {
@@ -41,4 +53,8 @@
 
 .font-xl {
   font-size: 48px;
+}
+
+.color-purple {
+  color: rgb(74, 0, 147);
 }
