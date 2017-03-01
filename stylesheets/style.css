@@ -240,58 +240,60 @@ body {
     width: 200px;
   }
 }
-/* line 104, ../sass/_app.scss */
-.hero .container .feature-container .feature p {
-  font-size: 13px;
+@media only screen and (max-width: 767px) {
+  /* line 104, ../sass/_app.scss */
+  .hero .container .feature-container .feature p {
+    font-size: 13px;
+  }
 }
 @media only screen and (max-width: 767px) {
-  /* line 108, ../sass/_app.scss */
+  /* line 110, ../sass/_app.scss */
   .hero .container .feature-container .feature svg {
     width: 30px;
   }
 }
-/* line 116, ../sass/_app.scss */
+/* line 118, ../sass/_app.scss */
 .hero .container .download-button {
   animation-delay: 1.5s;
 }
-/* line 120, ../sass/_app.scss */
+/* line 122, ../sass/_app.scss */
 .hero .container .download-button .btn {
   color: #fff;
 }
-/* line 124, ../sass/_app.scss */
+/* line 126, ../sass/_app.scss */
 .hero .container .download-button .btn-apps {
   background-color: #ECF0F1;
   margin: 30px 6px;
   color: #000 !important;
 }
-/* line 130, ../sass/_app.scss */
+/* line 132, ../sass/_app.scss */
 .hero .container .download-button button {
   padding: 15px;
   width: 250px;
   transition: 0.3s background-color linear;
   background-color: #E8490C;
 }
-/* line 137, ../sass/_app.scss */
+/* line 139, ../sass/_app.scss */
 .hero .container .download-button button:hover {
   background-color: #FF0000;
 }
-/* line 143, ../sass/_app.scss */
+/* line 145, ../sass/_app.scss */
 .hero .container .scroll {
   position: absolute;
   top: 95vh;
 }
 
-/* line 153, ../sass/_app.scss */
+/* line 155, ../sass/_app.scss */
 .info {
   padding: 40px 0;
 }
 @media only screen and (min-width: 992px) {
-  /* line 153, ../sass/_app.scss */
+  /* line 155, ../sass/_app.scss */
   .info {
     padding: 100px 0;
   }
 }
-/* line 165, ../sass/_app.scss */
+/* line 167, ../sass/_app.scss */
 .info .container .col-md-6 .info-content {
   border-bottom: 2px solid #fff;
   padding-bottom: 15px;
@@ -299,81 +301,93 @@ body {
   text-align: center;
 }
 @media only screen and (min-width: 992px) {
-  /* line 165, ../sass/_app.scss */
+  /* line 167, ../sass/_app.scss */
   .info .container .col-md-6 .info-content {
     text-align: left;
   }
 }
-/* line 189, ../sass/_app.scss */
+@media only screen and (max-width: 767px) {
+  /* line 181, ../sass/_app.scss */
+  .info .container .container {
+    margin-top: -100px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 181, ../sass/_app.scss */
+  .info .container .container {
+    margin-top: -100px;
+  }
+}
+/* line 191, ../sass/_app.scss */
 .info .container .container .col-md-6 {
   text-align: center;
 }
-/* line 192, ../sass/_app.scss */
+/* line 194, ../sass/_app.scss */
 .info .container .container .col-md-6 p {
   margin: 30px 0;
   padding-bottom: 15px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 197, ../sass/_app.scss */
+  /* line 199, ../sass/_app.scss */
   .info .container .container .col-md-6 p:first-child {
     border-bottom: 2px solid #fff;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 203, ../sass/_app.scss */
+  /* line 205, ../sass/_app.scss */
   .info .container .container .col-md-6 p:first-child {
     border-bottom: 2px solid #fff;
     display: inline;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 192, ../sass/_app.scss */
+  /* line 194, ../sass/_app.scss */
   .info .container .container .col-md-6 p {
     margin: 15px 30px 0 0;
     border-bottom: none;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 189, ../sass/_app.scss */
+  /* line 191, ../sass/_app.scss */
   .info .container .container .col-md-6 {
     text-align: left;
     padding-left: 0;
   }
 }
 
-/* line 224, ../sass/_app.scss */
+/* line 226, ../sass/_app.scss */
 .svg-container {
   width: 83%;
   margin: 0 auto;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 224, ../sass/_app.scss */
+  /* line 226, ../sass/_app.scss */
   .svg-container {
     width: 59%;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 224, ../sass/_app.scss */
+  /* line 226, ../sass/_app.scss */
   .svg-container {
     width: 63%;
     margin-top: -35px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 237, ../sass/_app.scss */
+  /* line 239, ../sass/_app.scss */
   .svg-container svg {
     width: 350px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 237, ../sass/_app.scss */
+  /* line 239, ../sass/_app.scss */
   .svg-container svg {
     margin-top: 26px;
     height: 310px;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 237, ../sass/_app.scss */
+  /* line 239, ../sass/_app.scss */
   .svg-container svg {
     margin-top: 26px;
     height: 310px;
