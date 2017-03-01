@@ -8,6 +8,7 @@ html {
 
 a {
   color: #fff !important;
+  transition: 0.5s color ease;
 }
 
 img {
@@ -150,9 +151,11 @@ body {
 
     .scroll {
       position: absolute;
-      // width: 98%;
-      // margin: 0 auto;
-      top: 95vh;
+      top: 90vh;
+
+      @include media(desktop){
+        top: 95vh;
+      }
     }
 
   }
@@ -289,6 +292,7 @@ body {
 
           &:hover {
             background-color:#FF0000;
+            color: #fff;
           }
         }
       }
@@ -301,7 +305,7 @@ footer {
   background-color: rgb(38,50,56);
 
   @include media(desktop) {
-    padding:100px 0;
+    padding:60px 0;
   }
 
   .container-fluid {
@@ -311,6 +315,60 @@ footer {
 
         @include media(desktop) {
           text-align: left;
+
+          li {
+
+            margin: 10px 0;
+
+            a {
+              text-decoration: none!important;
+              color:#B0BEC5!important;
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .partner-links {
+      ul {
+        display: flex;
+        justify-content: space-around;
+        // align-items: center;
+
+        li {
+          margin: 5px 0;
+          img {
+            width: 60px;
+          }
+        }
+      }
+    }
+
+    .footer-social {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        @include media(desktop) {
+          width: 70%
+        }
+
+        li {
+          a {
+            img {
+              margin: 0 2px;
+              padding: 5px;
+              width: 32px;
+              height: 32px;
+              border-radius: 20%;
+              transition: background-color 0.5s ease;
+              margin-bottom: 4px;
+            }
+          }
         }
       }
     }
